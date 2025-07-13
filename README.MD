@@ -1,6 +1,7 @@
 # Cursor Installer for Linux 🐧
 
-This script automatically downloads and installs the latest version of [Cursor](https://www.cursor.com), an AI-first code editor, on Linux systems.
+This script automatically downloads and installs the latest version of
+[Cursor](https://www.cursor.com), an AI-first code editor, on Linux systems.
 
 ## 🚀 Features
 
@@ -14,10 +15,11 @@ This script automatically downloads and installs the latest version of [Cursor](
 Run this one-liner in your terminal:
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/alisouran/install-cursor/main/install.sh)
+bash <(curl -sL https://raw.githubusercontent.com/alisouran/install-cursor/main/install.sh)
 ```
 
-> ⚠️ You might be prompted for your password during installation (used for `sudo`).
+> ⚠️ You might be prompted for your password during installation (used for
+> `sudo`).
 
 ## 🛠 Requirements
 
@@ -41,7 +43,8 @@ bash <(curl -s https://raw.githubusercontent.com/alisouran/install-cursor/main/i
   - File associations for text files and directories
   - Proper application categorization
   - High-resolution icon integration
-- Optionally creates a symlink in `/usr/local/bin` so you can launch with `cursor`
+- Optionally creates a symlink in `/usr/local/bin` so you can launch with
+  `cursor`
 - Performs a test run to verify the installation
 
 ## 🐛 Troubleshooting
@@ -73,7 +76,8 @@ The installer includes an automatic test run that will:
 2. Monitor its execution for 10 seconds
 3. Provide feedback if the application exits unexpectedly
 
-If you encounter any issues during installation, the script will attempt alternative methods including:
+If you encounter any issues during installation, the script will attempt
+alternative methods including:
 
 - Trying different FUSE mounting approaches
 - Searching for alternative chrome-sandbox locations
