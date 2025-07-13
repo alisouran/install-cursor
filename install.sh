@@ -13,7 +13,7 @@ get_latest_version() {
 
     # Get the latest version information
     local VERSION_INFO
-    VERSION_INFO=$(curl -s "https://www.cursor.com/api/download?platform=linux-x64&releaseTrack=stable")
+    VERSION_INFO=$(curl -sL "https://www.cursor.com/api/download?platform=linux-x64&releaseTrack=stable")
     
     # Extract download URL and version using grep and cut
     # Note: Using grep/cut instead of jq to avoid additional dependencies
